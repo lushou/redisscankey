@@ -41,8 +41,7 @@ func main() {
 	}
 
 	wg.Wait()
-	fmt.Println("当前redis一共有", dbsizes)
-	// 开始进行模糊匹配有多少key
-	fmt.Println("模糊匹配key有", keys)
+	log.Info("当前redis一共有", dbsizes)
+	log.Info("当前redis一共有", keys)
 	log.Info("执行完成")
 }
