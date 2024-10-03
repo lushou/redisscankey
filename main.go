@@ -42,6 +42,6 @@ func main() {
 
 	wg.Wait()
 	log.Info("当前redis一共有", dbsizes)
-	log.Info("当前redis一共有", keys)
+	log.Info(fmt.Sprintf("当前redis 中以%s开通的一共有%d个", config.Savnes.Key, keys))
 	log.Info("执行完成")
 }
